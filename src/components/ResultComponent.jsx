@@ -61,7 +61,6 @@ const Result = () => {
         Source_code: sourceCode,
         Submit_date: date,
       };
-      console.log("param",param);
       postHistoryResult(param,"historypractices/add");
     } else if (sessionStorage.getItem("Role") === "Author")
     {
@@ -77,7 +76,6 @@ const Result = () => {
         Source_code: sourceCode,
         Submit_date: date,
       };
-      console.log("param",param);
       postHistoryResult(param,"authorhistorypractices/add");
     }
   };
@@ -136,6 +134,7 @@ const Result = () => {
         sessionStorage.removeItem(name);
       }
     }
+    alert("Lưu bài thành công");
     setNavigate(true);
   };
   const handleButton_Back = () => {
