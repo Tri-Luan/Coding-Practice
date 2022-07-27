@@ -49,7 +49,7 @@ const Login = () => {
       document.getElementById("notification").innerHTML =
         "Mật khẩu không hợp lệ.";
       document.getElementById("password").value = "";
-    } else {
+    } else if (password !== "" && password === pwd){
       // True Student
       var role = "Student";
       sessionStorage.setItem("Role", role);
@@ -83,7 +83,7 @@ const Login = () => {
       document.getElementById("notification").innerHTML =
         "Mật khẩu không hợp lệ.";
       document.getElementById("password").value = "";
-    } else {
+    } else if (password !== "" && password === pwd) {
       // True Author
       var role = "Author";
       sessionStorage.setItem("Role", role);
